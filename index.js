@@ -11,7 +11,6 @@ const client = new Client({
 
 const statusMessages = ["Đang chơi ----- City","✅ Leader: Johnny Jeffrey ✅","🆘 Hỗ trợ 24/7 🆘","👮 Nhận setup đồn cảnh sát UPD 👮","🛠️ Nhận setup Discord theo yêu cầu 🛠️","📞 Contact Discord: thuyalwayssmiles93"];
 
-
 let currentIndex = 0;
 const channelId = '';
 
