@@ -33,7 +33,6 @@ function updateStatusAndSendMessages() {
     status: 'dnd',
   });
 
-
   const textChannel = client.channels.cache.get(channelId);
 
   if (textChannel instanceof TextChannel) {
