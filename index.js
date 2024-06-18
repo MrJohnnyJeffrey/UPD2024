@@ -11,8 +11,7 @@ const client = new Client({
 const app = express();
 const port = 3000;
 app.get('/', (req, res) => {
-  const imagePath = path.join(__dirname, 'index.html');
-  res.sendFile(imagePath);
+  res.send('YaY Your Bot Status Changed✨');
 });
 
 
