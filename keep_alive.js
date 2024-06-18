@@ -7,7 +7,7 @@ server.all("/", (req, res) => {
 })
 
 function keepAlive() {
-  server.listen(3000, () => {
+  server.listen(80, () => {
     console.log("Server is up and running, Make it 24/7 now!")
   })
 }
