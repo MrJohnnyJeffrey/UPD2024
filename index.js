@@ -1,6 +1,6 @@
 const { Client, GatewayIntentBits, ActivityType, TextChannel } = require('discord.js');
 require('dotenv').config();
-const express = require('express');
+const keepAlive = require("./keep_alive")
 const fs = require('fs');
 const path = require('path');
 const client = new Client({
@@ -8,12 +8,6 @@ const client = new Client({
     return GatewayIntentBits[a];
   }),
 });
-const app = express();
-const port = 3000;
-app.get('/', (req, res) => {
-  res.send('YaY Your Bot Status Changed✨');
-});
-
 
 const statusMessages = ["Đang chơi ----- City","✅ Leader: Johnny Jeffrey ✅","🆘 Hỗ trợ 24/7 🆘","👮 Nhận setup đồn cảnh sát UPD 👮","🛠️ Nhận setup Discord theo yêu cầu 🛠️","📞 Contact Discord: thuyalwayssmiles93"];
 
