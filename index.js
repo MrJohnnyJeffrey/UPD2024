@@ -8,8 +8,14 @@ const client = new Client({
     return GatewayIntentBits[a];
   }),
 });
+const app = express();
+const port = 3000;
+app.get('/', (req, res) => {
+  const imagePath = path.join(__dirname, 'index.html');
+  res.sendFile(imagePath);
+});
 
-const statusMessages = ["Đang chơi ----- City","✅ Leader: Johnny Jeffrey ✅","🆘 Hỗ trợ 24/7 🆘","👮 Nhận setup đồn cảnh sát UPD 👮","🛠️ Nhận setup Discord theo yêu cầu 🛠️","📞 Contact Discord: thuyalwayssmiles93"];
+const statusMessages = ["Đang chơi JC ROLEPLAY City","✅Leader: Johnny Jeffrey✅","🆘Hỗ trợ 24/7🆘","👮Nhận setup đồn cảnh sát UPD👮","🛠️Nhận setup Discord theo yêu cầu🛠️","📞Contact Discord: thuyalwayssmiles93📞"];
 
 let currentIndex = 0;
 const channelId = '';
